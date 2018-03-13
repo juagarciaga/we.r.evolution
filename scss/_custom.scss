@@ -1,0 +1,26 @@
+#about{
+	background: url(/img/bg-sudaka.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    &:after {
+    	content: " ";
+	    background-color: #ffffff;
+	    opacity: 0.5;
+	    height: 100%;
+	    display: block;
+	    width: 100%;
+	    position: absolute;
+	    top: 0;
+	    left: 0;
+    }
+}
+
+.my-auto {
+	z-index: 1;
+	margin-top: 5rem !important;
+}
+
+button {
+	border: none;
+}
