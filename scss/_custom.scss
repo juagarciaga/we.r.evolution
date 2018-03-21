@@ -24,3 +24,53 @@
 button {
 	border: none;
 }
+
+.store {
+	h3 {
+		text-align: center;
+		width: 100%;
+		border-bottom: 1px solid $revo;
+	    padding: 10px 0;
+	    margin: 0 0 20px;
+
+		@media (min-width: 768px) {
+			text-align: left;
+		}
+	}
+
+	.common_product {
+		margin-bottom: 2rem;
+		img {
+			width: 100%;
+			@media (min-width: 768px) {
+				width: 50%;
+			}
+		}
+
+		.product {
+			text-align: center;
+		}
+	}
+
+	.camisetas,
+	.bermudas,
+	.bones,
+	.manguitos {
+		@extend .common_product;
+	}
+
+	.col-md-6 {
+		float: none;
+		@media (min-width: 768px) {
+			float: left;
+		}
+	}
+}
+
+.highlithg {
+	color: #ffffff;
+	text-align: center;
+	background: {
+		color: $revo;
+	};
+}

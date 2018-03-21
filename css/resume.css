@@ -172,3 +172,51 @@ a:hover, a:focus, a:active {
 button {
   border: none;
 }
+
+.store h3 {
+  text-align: center;
+  width: 100%;
+  border-bottom: 1px solid #531f5c;
+  padding: 10px 0;
+  margin: 0 0 20px;
+}
+
+@media (min-width: 768px) {
+  .store h3 {
+    text-align: left;
+  }
+}
+
+.store .common_product, .store .camisetas, .store .bermudas, .store .bones, .store .manguitos {
+  margin-bottom: 2rem;
+}
+
+.store .common_product img, .store .camisetas img, .store .bermudas img, .store .bones img, .store .manguitos img {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .store .common_product img, .store .camisetas img, .store .bermudas img, .store .bones img, .store .manguitos img {
+    width: 50%;
+  }
+}
+
+.store .common_product .product, .store .camisetas .product, .store .bermudas .product, .store .bones .product, .store .manguitos .product {
+  text-align: center;
+}
+
+.store .col-md-6 {
+  float: none;
+}
+
+@media (min-width: 768px) {
+  .store .col-md-6 {
+    float: left;
+  }
+}
+
+.highlithg {
+  color: #ffffff;
+  text-align: center;
+  background-color: #531f5c;
+}
