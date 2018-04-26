@@ -117,6 +117,7 @@ section.resume-section .resume-item .resume-date {
 @media (min-width: 768px) {
   section.resume-section {
     min-height: 100vh;
+    padding-top: 0 !important;
   }
   section.resume-section .resume-item .resume-date {
     min-width: 18rem;
@@ -124,6 +125,7 @@ section.resume-section .resume-item .resume-date {
 }
 
 @media (min-width: 992px) {
+  padding-top: 0 !important;
   section.resume-section {
     padding-top: 3rem !important;
     padding-bottom: 3rem !important;
@@ -164,9 +166,21 @@ a:hover, a:focus, a:active {
   left: 0;
 }
 
+@media (max-width: 768px) {
+  #about:after {
+    max-height: 500px;
+  }
+}
+
 .my-auto {
   z-index: 1;
   margin-top: 5rem !important;
+}
+
+@media (max-width: 768px) {
+  .my-auto {
+    margin-top: 0 !important;
+  }
 }
 
 button {
@@ -187,7 +201,10 @@ button {
   }
 }
 
-.store .common_product, .store .camisetas, .store .bermudas, .store .bones, .store .manguitos {
+.store .common_product, .store .camisetas,
+.store .bermudas,
+.store .bones,
+.store .manguitos {
   margin-bottom: 2rem;
 }
 
@@ -205,6 +222,15 @@ button {
   text-align: center;
 }
 
+@media (max-width: 768px) {
+  .store .manguitos {
+    text-align: center;
+  }
+  .store .manguitos img {
+    width: 30%;
+  }
+}
+
 .store .col-md-6 {
   float: none;
 }
@@ -216,7 +242,16 @@ button {
 }
 
 .highlithg {
-  color: #ffffff;
   text-align: center;
   background-color: #531f5c;
+  padding: 15px;
+}
+
+.highlithg h6 {
+  color: #ffffff;
+  text-transform: capitalize;
+}
+
+#jogadores .btn-jogador {
+  background: none;
 }

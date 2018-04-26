@@ -22,11 +22,10 @@
 
     <!-- Custom styles for this template -->
     <link href="css/resume.min.css" rel="stylesheet">
-
+    <script src="node_modules/angular/angular.js"></script>
   </head>
 
-  <body id="page-top">
-
+  <body id="page-top" ng-app="revoApp">
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
       <a class="navbar-brand js-scroll-trigger" href="#page-top">
         <span class="d-block d-lg-none">(r)Evolution</span>
@@ -46,16 +45,16 @@
             <a class="nav-link js-scroll-trigger" href="#treinos">Treinos</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#store">(r)evostore</a>
+            <a class="nav-link js-scroll-trigger" href="#jogadores">Jogadores</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#jogadores">Jogadores</a>
+            <a class="nav-link js-scroll-trigger" href="#store">(r)evostore</a>
           </li>
         </ul>
       </div>
     </nav>
 
-    <div class="container-fluid p-0">
+    <div class="container-fluid p-0" ng-controller="revoAppController">
 
       <section class="resume-section p-3 p-lg-5 d-flex d-column" id="about">
         <div class="my-auto">
@@ -63,14 +62,6 @@
             <span class="text-primary">Evolução</span>
           </h1>
           <ul class="list-inline list-social-icons mb-0">
-            <!-- <li class="list-inline-item">
-              <a href="#">
-                <span class="fa-stack fa-lg">
-                  <i class="fa fa-circle fa-stack-2x"></i>
-                  <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
-                </span>
-              </a>
-            </li> -->
             <li class="list-inline-item">
               <a href="https://www.instagram.com/r.evolution.ultimate/" target="_blank">
                 <span class="fa-stack fa-lg">
@@ -82,7 +73,11 @@
           </ul>
         </div>
       </section>
-
+      <section class="highlithg">
+        <h6>(r)Evolution is a cool (we hope!) team from Brazil who is slowly spreading its wings.</h6>
+        <h6>The team was formed in 2012, but was re-birthed in 2015 with a focus on growing the Ultimate community in Brazil and developing
+        a solid culture of practice and growth, always pushing to be an example in inclusiveness, development and spirit.</h6>
+      </section>
       <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="treinos">
         <div class="my-auto">
           <h2 class="mb-5">Treinos</h2>
@@ -109,7 +104,76 @@
           </div>
         </div>
       </section>
+      <section class="highlithg">
+        <h6>We have a very diverse group of players from a few satellite cities around São Paulo, as well as a few different nationalities - Ucranian, Colombian, American, French - who live in here.</h6>
+        <h6>We love to meet new people, engage in games, challenge each other and grow our team and sport. Windmill has been a dream tournament we've been considering for the past year.</h6>
+      </section>
+      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="jogadores">
+        <h2 class="mb-5">Jogadores</h2>
+          <div class="row">
+            <div class="col-4 col-md-2" ng-repeat="friend in friends">
+              [{{$index + 1}}] {{friend.name}} who is {{friend.img}} years old.
+              <button type="button" class="btn-jogador" data-toggle="modal" data-target="#leansi">
+                <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/jogadores/leansi.jpg" alt="">
+              </button>
+            </div>
+            <div class="col-4 col-md-2" ng-repeat="friend in friends">
+              <button type="button" class="btn-jogador" data-toggle="modal" data-target="#leansi">
+              <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/jogadores/leansi.jpg" alt="">
+              </button>
+            </div>
+          </div>            
 
+            <!-- Leansi -->
+            <div class="modal fade" id="leansi" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title">Leansi</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <p>Vamoooo Timeeee !!!<br>Olá, eu sou o Leansi !!! <br>
+                    Jogo ultimate a 3 anos, sendo estes os anos mais felizes da minha vida, onde encontrei amigos e uma segunda família.<br>
+                    (r)Evolution é a minha equipe, onde tenho oportunidade de melhorar tanto como jogador quanto como ser humano !!! <br>
+                    Nosso lema é dia a dia, seremos melhores, nós não vamos parar, treinamos forte porque podemos mais !!! <br>
+                    Fomos campeões de espírito em um campeonato tradicional da Argentina : Espiritu Sudaka 2017
+                    Gosto de jogar na posição de handler, armar as jogadas e ver o disco fluindo até a endzone !!!! É uma sensação indescritível !!! <br>
+                    Jogo como cutter tb, onde geralmente busco o disco para dar continuidade ao jogo.... em alguns casos faço fundo, depende das necessidades !!! <br>
+                    O que mais me agrada é o FairPlay e a competitividade do jogo, sempre busco dar o meu melhor e fazer com que a equipe mantenha uma vibe positiva.<br>
+                    Esse sou eu !!</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Modal -->
+            <div class="modal fade" id="leansi" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title">Leansi</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <p>Vamoooo Timeeee !!!<br>Olá, eu sou o Leansi !!! <br>
+                    Jogo ultimate a 3 anos, sendo estes os anos mais felizes da minha vida, onde encontrei amigos e uma segunda família.<br>
+                    (r)Evolution é a minha equipe, onde tenho oportunidade de melhorar tanto como jogador quanto como ser humano !!! <br>
+                    Nosso lema é dia a dia, seremos melhores, nós não vamos parar, treinamos forte porque podemos mais !!! <br>
+                    Fomos campeões de espírito em um campeonato tradicional da Argentina : Espiritu Sudaka 2017
+                    Gosto de jogar na posição de handler, armar as jogadas e ver o disco fluindo até a endzone !!!! É uma sensação indescritível !!! <br>
+                    Jogo como cutter tb, onde geralmente busco o disco para dar continuidade ao jogo.... em alguns casos faço fundo, depende das necessidades !!! <br>
+                    O que mais me agrada é o FairPlay e a competitividade do jogo, sempre busco dar o meu melhor e fazer com que a equipe mantenha uma vibe positiva.<br>
+                    Esse sou eu !!</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+      </section>
       <section class="resume-section p-3 p-lg-5 d-flex flex-column store" id="store">
         <div class="my-auto">
           <h2 class="mb-5">(r)evostore</h2>
@@ -162,130 +226,6 @@
           </div>
         </div>
       </section>
-      <section class="highlithg">
-        <h2>Faça seu pedido Agora!</h2>
-        <p>Text</p>
-        <p>Text</p>
-        <a href="#" class="btn btn-primary contact">Contact</a>
-        
-      </section>
-
-      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="jogadores">
-          <h2 class="mb-5">Jogadores</h2>
-          <div class="row">
-            <div class="col-4 col-md">
-              <button type="button" class="btn-jogador" data-toggle="modal" data-target="#leansi">
-              <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/jogadores/leansi.jpg" alt="">
-              </button>
-            </div>
-            <div class="col-4 col-md">
-              <button type="button" class="btn-jogador" data-toggle="modal" data-target="#leansi">
-              <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/jogadores/leansi.jpg" alt="">
-              </button>
-            </div>
-            <div class="col-4 col-md">
-              <button type="button" class="btn-jogador" data-toggle="modal" data-target="#leansi">
-              <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/jogadores/leansi.jpg" alt="">
-              </button>
-            </div>
-            <div class="col-4 col-md">
-              <button type="button" class="btn-jogador" data-toggle="modal" data-target="#leansi">
-              <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/jogadores/leansi.jpg" alt="">
-              </button>
-            </div>
-            <div class="col-4 col-md">
-              <button type="button" class="btn-jogador" data-toggle="modal" data-target="#leansi">
-              <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/jogadores/leansi.jpg" alt="">
-              </button>
-            </div>
-            <div class="col-4 col-md">
-              <button type="button" class="btn-jogador" data-toggle="modal" data-target="#leansi">
-              <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/jogadores/leansi.jpg" alt="">
-              </button>
-            </div>
-            <div class="col-4 col-md">
-              <button type="button" class="btn-jogador" data-toggle="modal" data-target="#leansi">
-              <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/jogadores/leansi.jpg" alt="">
-              </button>
-            </div>
-            <div class="col-4 col-md">
-              <button type="button" class="btn-jogador" data-toggle="modal" data-target="#leansi">
-              <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/jogadores/leansi.jpg" alt="">
-              </button>
-            </div>
-            <div class="col-4 col-md">
-              <button type="button" class="btn-jogador" data-toggle="modal" data-target="#leansi">
-              <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/jogadores/leansi.jpg" alt="">
-              </button>
-            </div>
-            <div class="col-4 col-md">
-              <button type="button" class="btn-jogador" data-toggle="modal" data-target="#leansi">
-              <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/jogadores/leansi.jpg" alt="">
-              </button>
-            </div>
-            <div class="col-4 col-md">
-              <button type="button" class="btn-jogador" data-toggle="modal" data-target="#leansi">
-              <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/jogadores/leansi.jpg" alt="">
-              </button>
-            </div>
-            <div class="col-4 col-md">
-              <button type="button" class="btn-jogador" data-toggle="modal" data-target="#leansi">
-              <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/jogadores/leansi.jpg" alt="">
-              </button>
-            </div>
-          </div>
-
-      
-
-          
-
-          
-
-          
-            
-
-            <!-- Leansi -->
-            <div class="modal fade" id="leansi" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-              <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                  
-                  <div class="modal-body">
-                    <p>Vamoooo Timeeee !!!<br>Olá, eu sou o Leansi !!! <br>
-                    Jogo ultimate a 3 anos, sendo estes os anos mais felizes da minha vida, onde encontrei amigos e uma segunda família.<br>
-                    (r)Evolution é a minha equipe, onde tenho oportunidade de melhorar tanto como jogador quanto como ser humano !!! <br>
-                    Nosso lema é dia a dia, seremos melhores, nós não vamos parar, treinamos forte porque podemos mais !!! <br>
-                    Fomos campeões de espírito em um campeonato tradicional da Argentina : Espiritu Sudaka 2017
-                    Gosto de jogar na posição de handler, armar as jogadas e ver o disco fluindo até a endzone !!!! É uma sensação indescritível !!! <br>
-                    Jogo como cutter tb, onde geralmente busco o disco para dar continuidade ao jogo.... em alguns casos faço fundo, depende das necessidades !!! <br>
-                    O que mais me agrada é o FairPlay e a competitividade do jogo, sempre busco dar o meu melhor e fazer com que a equipe mantenha uma vibe positiva.<br>
-                    Esse sou eu !!</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Modal -->
-            <div class="modal fade" id="leansi" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-              <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                  
-                  <div class="modal-body">
-                    <p>Vamoooo Timeeee !!!<br>Olá, eu sou o Leansi !!! <br>
-                    Jogo ultimate a 3 anos, sendo estes os anos mais felizes da minha vida, onde encontrei amigos e uma segunda família.<br>
-                    (r)Evolution é a minha equipe, onde tenho oportunidade de melhorar tanto como jogador quanto como ser humano !!! <br>
-                    Nosso lema é dia a dia, seremos melhores, nós não vamos parar, treinamos forte porque podemos mais !!! <br>
-                    Fomos campeões de espírito em um campeonato tradicional da Argentina : Espiritu Sudaka 2017
-                    Gosto de jogar na posição de handler, armar as jogadas e ver o disco fluindo até a endzone !!!! É uma sensação indescritível !!! <br>
-                    Jogo como cutter tb, onde geralmente busco o disco para dar continuidade ao jogo.... em alguns casos faço fundo, depende das necessidades !!! <br>
-                    O que mais me agrada é o FairPlay e a competitividade do jogo, sempre busco dar o meu melhor e fazer com que a equipe mantenha uma vibe positiva.<br>
-                    Esse sou eu !!</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-        
-      </section>
     </div>
 
     <!-- Bootstrap core JavaScript -->
@@ -297,6 +237,7 @@
 
     <!-- Custom scripts for this template -->
     <script src="js/resume.min.js"></script>
+    <script src="js/werevolution.js"></script>
 
   </body>
 
