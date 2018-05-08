@@ -110,68 +110,117 @@
       <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="jogadores">
         <h2 class="mb-5">Jogadores</h2>
           <div class="row">
-            <div class="col-4 col-md-2" ng-repeat="friend in friends">
-              [{{$index + 1}}] {{friend.name}} who is {{friend.img}} years old.
+            <div class="col-4 col-md-2">
+              <button type="button" class="btn-jogador" data-toggle="modal" data-target="#cami">
+                <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/jogadores/cami.jpg" alt="">
+              </button>
+            </div>
+            <div class="col-4 col-md-2">
+              <button type="button" class="btn-jogador" data-toggle="modal" data-target="#doug">
+                <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/jogadores/doug.jpg" alt="">
+              </button>
+            </div>
+            <div class="col-4 col-md-2">
+              <button type="button" class="btn-jogador" data-toggle="modal" data-target="#gabi">
+                <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/jogadores/gabi.jpg" alt="">
+              </button>
+            </div>
+            <div class="col-4 col-md-2">
+              <button type="button" class="btn-jogador" data-toggle="modal" data-target="#gus">
+                <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/jogadores/gus.jpg" alt="">
+              </button>
+            </div>
+            <div class="col-4 col-md-2">
+              <button type="button" class="btn-jogador" data-toggle="modal" data-target="#ju">
+                <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/jogadores/ju.jpg" alt="">
+              </button>
+            </div>
+            <div class="col-4 col-md-2">
+              <button type="button" class="btn-jogador" data-toggle="modal" data-target="#junior">
+                <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/jogadores/junior.jpg" alt="">
+              </button>
+            </div>
+            <div class="col-4 col-md-2">
               <button type="button" class="btn-jogador" data-toggle="modal" data-target="#leansi">
                 <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/jogadores/leansi.jpg" alt="">
               </button>
             </div>
-            <div class="col-4 col-md-2" ng-repeat="friend in friends">
+            <div class="col-4 col-md-2">
               <button type="button" class="btn-jogador" data-toggle="modal" data-target="#leansi">
-              <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/jogadores/leansi.jpg" alt="">
+                <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/jogadores/leansi.jpg" alt="">
+              </button>
+            </div>
+            <div class="col-4 col-md-2">
+              <button type="button" class="btn-jogador" data-toggle="modal" data-target="#line">
+                <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/jogadores/line.jpg" alt="">
+              </button>
+            </div>
+            <div class="col-4 col-md-2">
+              <button type="button" class="btn-jogador" data-toggle="modal" data-target="#lucas">
+                <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/jogadores/lucas.jpg" alt="">
+              </button>
+            </div>
+            <div class="col-4 col-md-2">
+              <button type="button" class="btn-jogador" data-toggle="modal" data-target="#manu">
+                <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/jogadores/manu.jpg" alt="">
+              </button>
+            </div>
+            <div class="col-4 col-md-2">
+              <button type="button" class="btn-jogador" data-toggle="modal" data-target="#marina">
+                <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/jogadores/marina.jpg" alt="">
+              </button>
+            </div>
+            <div class="col-4 col-md-2">
+              <button type="button" class="btn-jogador" data-toggle="modal" data-target="#nat">
+                <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/jogadores/nat.jpg" alt="">
+              </button>
+            </div>
+            <div class="col-4 col-md-2">
+              <button type="button" class="btn-jogador" data-toggle="modal" data-target="#robinho">
+                <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/jogadores/robinho.jpg" alt="">
+              </button>
+            </div>
+            <div class="col-4 col-md-2">
+              <button type="button" class="btn-jogador" data-toggle="modal" data-target="#sami">
+                <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/jogadores/sami.jpg" alt="">
+              </button>
+            </div>
+            <div class="col-4 col-md-2">
+              <button type="button" class="btn-jogador" data-toggle="modal" data-target="#seba">
+                <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/jogadores/seba.jpg" alt="">
+              </button>
+            </div>
+            <div class="col-4 col-md-2">
+              <button type="button" class="btn-jogador" data-toggle="modal" data-target="#vitor">
+                <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/jogadores/vitor.jpg" alt="">
               </button>
             </div>
           </div>            
 
-            <!-- Leansi -->
-            <div class="modal fade" id="leansi" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-              <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h5 class="modal-title">Leansi</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                      <span aria-hidden="true">&times;</span>
-                    </button>
-                  </div>
-                  <div class="modal-body">
-                    <p>Vamoooo Timeeee !!!<br>Olá, eu sou o Leansi !!! <br>
-                    Jogo ultimate a 3 anos, sendo estes os anos mais felizes da minha vida, onde encontrei amigos e uma segunda família.<br>
-                    (r)Evolution é a minha equipe, onde tenho oportunidade de melhorar tanto como jogador quanto como ser humano !!! <br>
-                    Nosso lema é dia a dia, seremos melhores, nós não vamos parar, treinamos forte porque podemos mais !!! <br>
-                    Fomos campeões de espírito em um campeonato tradicional da Argentina : Espiritu Sudaka 2017
-                    Gosto de jogar na posição de handler, armar as jogadas e ver o disco fluindo até a endzone !!!! É uma sensação indescritível !!! <br>
-                    Jogo como cutter tb, onde geralmente busco o disco para dar continuidade ao jogo.... em alguns casos faço fundo, depende das necessidades !!! <br>
-                    O que mais me agrada é o FairPlay e a competitividade do jogo, sempre busco dar o meu melhor e fazer com que a equipe mantenha uma vibe positiva.<br>
-                    Esse sou eu !!</p>
-                  </div>
+          <!-- Leansi -->
+          <div class="modal fade" id="leansi" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">Leansi</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <p>Vamoooo Timeeee !!!<br>Olá, eu sou o Leansi !!! <br>
+                  Jogo ultimate a 3 anos, sendo estes os anos mais felizes da minha vida, onde encontrei amigos e uma segunda família.<br>
+                  (r)Evolution é a minha equipe, onde tenho oportunidade de melhorar tanto como jogador quanto como ser humano !!! <br>
+                  Nosso lema é dia a dia, seremos melhores, nós não vamos parar, treinamos forte porque podemos mais !!! <br>
+                  Fomos campeões de espírito em um campeonato tradicional da Argentina : Espiritu Sudaka 2017
+                  Gosto de jogar na posição de handler, armar as jogadas e ver o disco fluindo até a endzone !!!! É uma sensação indescritível !!! <br>
+                  Jogo como cutter tb, onde geralmente busco o disco para dar continuidade ao jogo.... em alguns casos faço fundo, depende das necessidades !!! <br>
+                  O que mais me agrada é o FairPlay e a competitividade do jogo, sempre busco dar o meu melhor e fazer com que a equipe mantenha uma vibe positiva.<br>
+                  Esse sou eu !!</p>
                 </div>
               </div>
             </div>
-
-            <!-- Modal -->
-            <div class="modal fade" id="leansi" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-              <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h5 class="modal-title">Leansi</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                      <span aria-hidden="true">&times;</span>
-                    </button>
-                  </div>
-                  <div class="modal-body">
-                    <p>Vamoooo Timeeee !!!<br>Olá, eu sou o Leansi !!! <br>
-                    Jogo ultimate a 3 anos, sendo estes os anos mais felizes da minha vida, onde encontrei amigos e uma segunda família.<br>
-                    (r)Evolution é a minha equipe, onde tenho oportunidade de melhorar tanto como jogador quanto como ser humano !!! <br>
-                    Nosso lema é dia a dia, seremos melhores, nós não vamos parar, treinamos forte porque podemos mais !!! <br>
-                    Fomos campeões de espírito em um campeonato tradicional da Argentina : Espiritu Sudaka 2017
-                    Gosto de jogar na posição de handler, armar as jogadas e ver o disco fluindo até a endzone !!!! É uma sensação indescritível !!! <br>
-                    Jogo como cutter tb, onde geralmente busco o disco para dar continuidade ao jogo.... em alguns casos faço fundo, depende das necessidades !!! <br>
-                    O que mais me agrada é o FairPlay e a competitividade do jogo, sempre busco dar o meu melhor e fazer com que a equipe mantenha uma vibe positiva.<br>
-                    Esse sou eu !!</p>
-                  </div>
-                </div>
-              </div>
-            </div>
+          </div>
       </section>
       <section class="resume-section p-3 p-lg-5 d-flex flex-column store" id="store">
         <div class="my-auto">
