@@ -1,9 +1,9 @@
 section.resume-section {
   border-bottom: 1px solid $gray-300;
-  padding-top: 5rem !important;
-  padding-bottom: 5rem !important;
+  // padding-top: 5rem !important;
+  // padding-bottom: 5rem !important;
   .resume-item {
-    .resume-content {}
+    
     .resume-date {
       min-width: none;
     }
@@ -14,7 +14,7 @@ section.resume-section {
     min-height: 100vh;
     padding-top: 0 !important;
     .resume-item {
-      .resume-content {}
+      
       .resume-date {
         min-width: 18rem;
       }

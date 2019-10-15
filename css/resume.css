@@ -106,8 +106,6 @@ h2 {
 
 section.resume-section {
   border-bottom: 1px solid #dee2e6;
-  padding-top: 5rem !important;
-  padding-bottom: 5rem !important;
 }
 
 section.resume-section .resume-item .resume-date {
@@ -148,18 +146,12 @@ a:hover, a:focus, a:active {
   color: #1f0c23;
 }
 
-#about {
-  background: url(/img/bg-sudaka.png) no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-
 #about:after {
   content: " ";
   background-color: #ffffff;
   opacity: 0.5;
   height: 100%;
-  display: block;
+  display: none;
   width: 100%;
   position: absolute;
   top: 0;
@@ -169,6 +161,16 @@ a:hover, a:focus, a:active {
 @media (max-width: 768px) {
   #about:after {
     max-height: 500px;
+  }
+}
+
+#about .carousel-item {
+  min-width: 81vw;
+}
+
+@media (max-width: 768px) {
+  #about .carousel-item {
+    min-width: 100vw;
   }
 }
 

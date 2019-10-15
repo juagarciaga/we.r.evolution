@@ -1,14 +1,17 @@
 #about{
-	background: url(/img/bg-sudaka.png) no-repeat;
-    background-size: cover;
-    background-position: center;
+	// background: url(/img/bg-sudaka.png) no-repeat;
+    // background-size: cover;
+	// background-position: center;
+	// .carousel {
+	// 	height: 50vh;
+	// }
 
     &:after {
     	content: " ";
 	    background-color: #ffffff;
 	    opacity: 0.5;
 	    height: 100%;
-	    display: block;
+	    display: none;
 	    width: 100%;
 	    position: absolute;
 	    top: 0;
@@ -16,7 +19,14 @@
 		@media (max-width: 768px) {
 			max-height: 500px;
 		}
-    }
+	}
+
+	.carousel-item {
+		min-width: 81vw;
+		@media (max-width: 768px) {
+			min-width: 100vw;
+		}
+	}
 }
 
 .my-auto {
